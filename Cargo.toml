@@ -76,6 +76,11 @@ path = "examples/table.rs"
 required-features = ["termion"]
 
 [[example]]
+name = "table2"
+path = "examples/table2.rs"
+required-features = ["termion"]
+
+[[example]]
 name = "tabs"
 path = "examples/tabs.rs"
 required-features = ["termion"]
