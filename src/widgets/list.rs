@@ -24,6 +24,13 @@ impl Default for ListState {
 }
 
 impl ListState {
+    pub fn with_selection(selected: Option<usize>) -> Self {
+        Self {
+            offset: 0,
+            selected,
+        }
+    }
+
     pub fn selected(&self) -> Option<usize> {
         self.selected
     }

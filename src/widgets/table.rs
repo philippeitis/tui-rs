@@ -32,6 +32,13 @@ impl Default for TableState {
 }
 
 impl TableState {
+    pub fn with_selection(selected: Option<usize>) -> Self {
+        Self {
+            offset: 0,
+            selected,
+        }
+    }
+
     pub fn selected(&self) -> Option<usize> {
         self.selected
     }
